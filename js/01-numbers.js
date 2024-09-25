@@ -21,11 +21,11 @@ total = number1 - number2;
 
 const imgWidth = '100.52px'
 const imgWidthParsed = Number.parseInt(imgWidth)
-console.log(imgWidthParsed);
+// console.log(imgWidthParsed);
 
 const borderLength = '15.245cm'
 const borderLengthParsed = Number.parseFloat(borderLength)
-console.log(borderLengthParsed);
+// console.log(borderLengthParsed);
 NaN
 /*
  * - Метод число.toFixed(digits)
@@ -34,7 +34,7 @@ NaN
 const salary = 1300.16472;
 const fixedSalary = salary.toFixed(0)
 
-console.log(Number(fixedSalary));
+// console.log(Number(fixedSalary));
  
 // console.log(Number(salary.toFixed(1)));
 
@@ -79,8 +79,17 @@ const minNumber = Math.pow(base, power);
  * - Math.random()
  * - Math.round()
  */
-const randomNumber = Math.round(Math.random() * (50 - 15) + 15)
-// console.log(randomNumber);
+
+// Math.round()
+// const randomNumber = Math.random(); //0 - 1
+// console.log(Math.round(randomNumber));
+
+// const max = 20;
+// const min = 10;
+// const randNum = Math.random() * (max - min) + min;
+// console.log(Math.round(randNum));
+
+// console.log(Math.max(5, 10, 2, 150, 3));
 
 
 const colors = ['tomato', 'teal', 'orange', 'deeppink', 'skyblue'];

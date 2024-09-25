@@ -50,4 +50,9 @@ console.log();
             !true //false
 
             2 === 4 //false
-            2 !== 4 //true
+2 !== 4 //true
+            
+
+
+10 === 100 //false
+'10' === 10//false
