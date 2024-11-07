@@ -14,23 +14,28 @@
  */
 const message = 'В цьому рядку 26 символів.';
 
-// console.log(message.length);
+console.log(message.length);
+
+
+
 
 /*
  * Конкатенація рядків
  */
 
-const firstName = 'Emmy'
-const lastName = 'Lee'
 
-// console.log(firstName + ' ' + lastName);
+
+/**
+ * Шаблоний рядок
+ */
 
 // console.log(`Вітаю, ${firstName} ${lastName} , на нашому заході!`);
 
+// Метод trim() видаляє пропуски до та після рядка
 
 // const answer = prompt('Write your name, please')
 
-// Метод trim() видаляє пропуски до та після рядка
+
 
 // console.log(answer.trim());
 // console.log(answer.length);
@@ -79,9 +84,9 @@ const normalizedResult1 = result1.toLocaleLowerCase()
 // padStart() і padEnd()доповнює поточний рядок іншим рядком (кілька разів, якщо потрібно), доки отриманий рядок не досягне заданої довжини.
 // Відступ застосовується з кінця/початку поточного рядка.
 // console.log(userName.length);
-const userName = 'Mango'
-console.log(userName.length);
+// const userName = 'Mango'
+// console.log(userName.length);
 
-const greet = userName.padStart(2, '0')
+// const greet = userName.padStart(2, '0')
 
-console.log(greet);
+// console.log(greet);
