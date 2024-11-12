@@ -12,9 +12,9 @@
 /*
  * Довжина рядка, влістивість length
  */
-const message = 'В цьому рядку 26 символів.';
+// const message = 'В цьому рядку 26 символів.';
 
-console.log(message.length);
+// console.log(message.length);
 
 
 
@@ -22,14 +22,25 @@ console.log(message.length);
 /*
  * Конкатенація рядків
  */
+console.log(10 + 5 + '10');
 
+const firstName = 'John'
+const secondName = 'Jack'
+
+console.log('Вітаю' + ' ' + firstName + ' ' + secondName + '!');
 
 
 /**
  * Шаблоний рядок
  */
 
-// console.log(`Вітаю, ${firstName} ${lastName} , на нашому заході!`);
+const userName = 'Tom'
+
+
+const message = `Вітаю, ${userName}! Ваші сусіди на цей вікенд ${firstName} та ${secondName}. Кількість гостей на заході ${10 + 15}`
+
+
+console.log(message);
 
 // Метод trim() видаляє пропуски до та після рядка
 
@@ -40,11 +51,11 @@ console.log(message.length);
 // console.log(answer.trim());
 // console.log(answer.length);
 
-/*
- * Напиши скрипт який виведе рядок в форматі:
- * «Гість x y поселяється в g номер q»,
- * підставив замість x y g q значення змінних
- */
+
+// Напиши скрипт який виведе рядок в форматі:
+// «Гість x y поселяється в g номер q»,
+// підставив замість x y g q значення змінних
+
 // const firstName = 'Mango';
 // const lastName = 'Lee';
 // const room = 716;
