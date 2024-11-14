@@ -8,11 +8,11 @@
 // 18 % 6 //0
 
 console.log('Код до if');
-
-if (5 < 2) {
+  //false
+if ('') {
    console.log('Код всередині if');
 }
-
+Boolean //true false 
 console.log('Код після if');
 
 /*
