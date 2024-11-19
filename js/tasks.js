@@ -58,7 +58,6 @@ const isDnd = true;
 const sub = 'vip';
 
 // якщо користувач pro або користувач vip тоді є доступ
-//                          false            true
 // const canAccessContent =;
 
 
