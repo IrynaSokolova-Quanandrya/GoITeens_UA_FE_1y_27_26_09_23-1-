@@ -45,10 +45,13 @@
  */
                       
 const result = '' || 'false' || NaN 
-console.log(result);
+// console.log(result);
 
 
 /*
  * Логічне НІ (оператор !)
  * Робить інверсію правда > брехня та брехня > правда
  */
+
+const revers = !''
+console.log(revers);

@@ -7,13 +7,15 @@
 // 15 % 4 //3
 // 18 % 6 //0
 
-console.log('Код до if');
-  //false
-if ('') {
-   console.log('Код всередині if');
-}
-Boolean //true false 
-console.log('Код після if');
+
+
+// console.log('Код до if');
+//   //false
+// if ('') {
+//    console.log('Код всередині if');
+// }
+// Boolean //true false 
+// console.log('Код після if');
 
 /*
  * Оператор розгалуження if...else
@@ -30,15 +32,12 @@ const price = 150;
  * Оператор розгалуження else...if
  */
 
-if (condition) {
+// if (condition) {
     
-} else if (condition){
+// } else {
     
-} else if (condition) {
-    
-}
-
-const salary = 4500;
+// } 
+// const salary = 4500;
 // console.log('1 рівень досвіду');
 //  console.log('2 рівень досвіду');
 //   console.log('3 рівень досвіду');
@@ -49,6 +48,16 @@ const salary = 4500;
  * Тернарний оператор
  */
 
-// const salary = 5000;
-// let message;
+const accaunt = 500;
+let message;
+
+// if (accaunt >= 5000) {
+//  message =  'Ваш рахунок достатній для оплати товару'
+// } else {
+//    message = 'Ваш рахунок нижче потрібної суми'
+// }
+
+message = accaunt >= 5000 ? 'Ваш рахунок достатній для оплати товару' : 'Ваш рахунок нижче потрібної суми'
+
+console.log(message);
 

@@ -6,10 +6,49 @@
  * 'Токої кількості зірок немає'
  */
 
-const stars = 4;
+const stars = 6;
 let price;
 // Звичайний if
+
+// if (stars === 1 || stars === 2) {
+//     price = '20$';
+//     console.log(price);
+// } else if (stars === 3 || stars === 4){
+//     price = '50$';
+//     console.log(price);
+// }else if (stars === 5){
+//     price = '120$';
+//     console.log(price);
+// }else{
+//     console.log('Такої кількості зірок немає')
+// }
 // переписуємо на switch
+
+switch (stars) { 
+    case 3: 
+    case 4: 
+        price = '50$';
+        console.log(price);        
+        break;    
+    case 5: 
+        price = '120$';
+        console.log(price);        
+        break;
+    case 1: 
+    case 2: 
+        price = '20$';
+        console.log(price);        
+        break;
+    default:
+        console.log('Такої кількості зірок немає')
+        break;
+}
+cl
+
+
+
+
+
 
 
 /*
