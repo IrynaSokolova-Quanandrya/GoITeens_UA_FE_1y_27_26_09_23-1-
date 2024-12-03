@@ -5,6 +5,28 @@ for(let i = 0; i <= 5; i += 1){
     console.log(i);    
 }
 
+
+let i = 0;
+while (i <= 5) {
+    console.log(i);
+    i += 1;
+}
+
+
+let i = 0;
+do {
+    console.log(i);
+    i += 1;
+} while (i <= 5);
+
+
+
+
+
+
+
+
+
 // console.log(prompt('ghghj'));
 
 // console.log(Number(null));
