@@ -8,6 +8,16 @@
  * - Ітерація
  */
 
+const arr = []
+const names = ['Mark', 'Andrjy', 'Demian', 'Danya'];
+
+console.log(names);
+// console.log(names.length);
+// console.log(names[2]);
+
+names[1] = 'Andriy'
+
+console.log(names);
 
 /*
  * Передача по посиланню і по значенню
@@ -23,7 +33,7 @@
  * - for...of - якщо індекс не потрібен і в масиві нічого змінювати не потрібно
  */
 
-const names = ['Ola', 'Petra', 'Nastia', 'Mary'];
+// const names = ['Ola', 'Petra', 'Nastia', 'Mary'];
 
 // Методи split() і join()
 const str = 'Hello!';
