@@ -4,45 +4,24 @@
  * - Оголошення функції (function declaration)
  * - Аргументи і параметри
  * - return
- * - Поверненнф значення
+ * - Повернення значення
  * - Параметри за замовчуванням
  */
 
-// const fnA = function(param1){};
-
-// const fnB = param1 => param1.toLowerCase();
-
-// console.log(fnB('Hello'));
-
-const a = function() {};
-const b = a;
-
-console.log(a === b);
-
-// const addPrice = function(a, b){  
-//   // console.log('a: ', a);
-//   // console.log('b: ', b);
-
-//  return a + b;  
-// }
-
-// const res1 = addPrice(5, 15);
-// console.log(res1);
-
-// addPrice(15, 20);
-// addPrice(20, 15);
-// addPrice(10, 25);
-
-  
-  
-  // Function declaration
-  // findLogin('login');
+function getSum(a, b) {
+const res = a + b
+  return res;
  
-  // function findLogin(login, arr) {
-  //   console.log(login);
-  // }
+}
 
-  // findLogin('login');
+const result = getSum(5, 5)
+getSum(10, 15)
+getSum(20, 22)
+
+console.log(result);
+
+
+
 
   /*
    * - Стек викликів
