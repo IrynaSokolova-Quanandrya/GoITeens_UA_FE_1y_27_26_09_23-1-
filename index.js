@@ -28,19 +28,19 @@ console.log(result);
    * - Stack trace і пошук помилок
    */
   
-  // const fnA = function() {
-  //   console.log('Почала виконуватися [fnA]');
-  //   fnB();
-  //   console.log('Продовжила виконуватися [fnA] після виходу з [fnB]');
-  // };
+  const fnA = function() {
+    console.log('Почала виконуватися [fnA]'); //2
+    fnB();
+    console.log('Продовжила виконуватися [fnA] після виходу з [fnB]'); //4 
+  };
   
-  // const fnB = function() {
-  //   console.log('Виконується [fnB]');
-  // };
+  const fnB = function() {
+    console.log('Виконується [fnB]'); //3
+  };
   
-  // console.log('Почав виконання [main]');
-  // fnA();
-  // console.log('Продовжив виконуватися [main] після виходу з [fnA]');
+  console.log('Почав виконання [main]');//1
+  fnA();
+  console.log('Продовжив виконуватися [main] після виходу з [fnA]'); //5
     
     
     

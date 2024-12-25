@@ -1,3 +1,16 @@
+
+fnB()
+
+function fnB(params) {
+	
+}
+
+
+
+const fnA =  function (params) {
+	
+}
+
 /*
  * ВИКЛИЧИ НАСТУПНУ ФУНКЦІЮ
 */
@@ -37,7 +50,7 @@ add(5, 10, 15);
  */
 
 function makeMessage(username) {
-	console.log(`Hello ${username}`);
+	console.log(`Hello ${userТame}`);
 }
 
 makeMessage("Jacob")
@@ -65,3 +78,7 @@ console.log("C");
 logStuff();
 
 console.log("D");
+
+
+
+
