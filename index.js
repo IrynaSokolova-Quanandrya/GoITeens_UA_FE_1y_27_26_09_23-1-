@@ -8,17 +8,20 @@
  * - Параметри за замовчуванням
  */
 
-function getSum(a, b) {
-const res = a + b
-  return res;
+function getSum(...jhuj) {
+
+  console.log(jhuj);
+
+  // console.log(arguments);
+  // const args = Array.from(arguments)
+  // console.log(args);
  
 }
-
-const result = getSum(5, 5)
 getSum(10, 15)
-getSum(20, 22)
+getSum(20, 22, 10)
+getSum(5)
 
-console.log(result);
+// console.log(result);
 
 
 
@@ -28,19 +31,19 @@ console.log(result);
    * - Stack trace і пошук помилок
    */
   
-  const fnA = function() {
-    console.log('Почала виконуватися [fnA]'); //2
-    fnB();
-    console.log('Продовжила виконуватися [fnA] після виходу з [fnB]'); //4 
-  };
+  // const fnA = function() {
+  //   console.log('Почала виконуватися [fnA]'); //2
+  //   fnB();
+  //   console.log('Продовжила виконуватися [fnA] після виходу з [fnB]'); //4 
+  // };
   
-  const fnB = function() {
-    console.log('Виконується [fnB]'); //3
-  };
+  // const fnB = function() {
+  //   console.log('Виконується [fnB]'); //3
+  // };
   
-  console.log('Почав виконання [main]');//1
-  fnA();
-  console.log('Продовжив виконуватися [main] після виходу з [fnA]'); //5
+  // console.log('Почав виконання [main]');//1
+  // fnA();
+  // console.log('Продовжив виконуватися [main] після виходу з [fnA]'); //5
     
     
     
