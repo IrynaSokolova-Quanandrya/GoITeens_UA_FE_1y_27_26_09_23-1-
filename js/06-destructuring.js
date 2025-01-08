@@ -12,7 +12,6 @@ const playlist = {
   };
   
   // console.log(
-<<<<<<< Updated upstream
   //   playlist.name,
   //   playlist.rating,
   //   playlist.trackCount,
@@ -47,16 +46,6 @@ const playlist = {
   // //   trackCount,
   // //   author
   // // );
-=======
-  //   
-  // );
-
-  
-
-  // console.log(
-  //   
-  // );
->>>>>>> Stashed changes
 
   
   // /*
@@ -77,7 +66,6 @@ const playlist = {
   
   // // СПОСІБ 1
 
-<<<<<<< Updated upstream
   const { name, tag, location, avatar, stats } = profile;
 
   // console.log( name, location, stats);
@@ -108,31 +96,11 @@ const playlist = {
   
   // console.log(red, blue);
   
-=======
-  
-
-  // СПОСІБ 2
-  
-  
-
-  /*
-   * Деструктуризаці масивів
-   */
-  
-  // const rgb = [255, 100, 80];
-
-  // const [red, , blue] = rgb;  
-  
-  // console.log(red, blue);
-  
->>>>>>> Stashed changes
   // const authors = {
   //   kiwi: 4,
   //   poly: 7,
   //   ajax: 9,
   //   mango: 6,
-<<<<<<< Updated upstream
-=======
   // };
   
   // const entries = Object.entries(authors);
@@ -163,7 +131,6 @@ const playlist = {
   //     views: 4827,
   //     likes: 1308,
   //   },
->>>>>>> Stashed changes
   // };
   
   // const entries = Object.entries(authors);
