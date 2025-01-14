@@ -15,8 +15,8 @@ const playlist = {
 }
 
 // const objKey = prompt('Enter your key')
-console.log(playlist.raiting);
-console.log(playlist['name']);
+// console.log(playlist.raiting);
+// console.log(playlist['name']);
 
 /*
  * Доступ до властивості
@@ -43,8 +43,30 @@ console.log(playlist['name']);
    * Посилальний тип {} === {}
    */
   
-  
-  /*
+5 === 5 //true
+'hello' === 'hello' //true
+5 === 'hello' //false
+
+// console.log([1, 2] === [1, 2]);
+// { } === {}
+ 
+const number = 10;
+
+const obj = {
+    a: 5,
+    b:'hello'
+}
+
+const obj1 = obj
+const obj2 = obj1
+console.log(obj1 === obj2);
+
+
+// {a:5} === {a:5}//false
+
+
+
+ /*
    * Масиви і функції це об"єкти
    */
 //   function fnA() {
