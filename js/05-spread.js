@@ -6,27 +6,26 @@
 const numbers1 = [1, 2, 3, 54, 12]; 
 const numbers2 = [5, 65, 32, 14];
 
-// const numbers = numbers1.concat(numbers2);
+// const newArr = numbers1.concat(numbers2)
 
-const numbers = [...numbers1, 15, 20,58, 35, 36, 25, 34, ...numbers2];
 
-// console.log(numbers);
-
-// ...spread
-  // console.log(numbers);
-  // console.log(numbers1);
+const newArr = [10, 18, ...numbers1, 15, 10, ...numbers2]
+// console.log(newArr);
+// console.log(numbers1);
+// console.log('5' === '5');
+// console.log(newArr === numbers1);
   
   /*
    * Пошук найнижчої або найвищої температури (числа)
    */
   const temps = [18, 14, 12, 21, 17, 29, 24];
 
-  const lowestTemp = Math.min(...temps)
-  const hightTemp = Math.max(18, 14, 12, 21, 17, 29, 24)
+  const lowestTemp = Math.min()
+  const hightTemp = Math.max()
   
   // console.log(lowestTemp);
   // console.log(hightTemp);
-  // console.log();
+
   
   // const a = [
   //   { x: 1 },
@@ -57,8 +56,7 @@ const numbers = [...numbers1, 15, 20,58, 35, 36, 25, 34, ...numbers2];
   
   // const allTemps = lastWeekTemps.concat(currentTemps, nextWeekTemps)
 
-  
-
+ 
  
   // console.log(allTemps);
   
@@ -66,19 +64,29 @@ const numbers = [...numbers1, 15, 20,58, 35, 36, 25, 34, ...numbers2];
    * Розпорошення об"ектів
    * - Object.prototype.assign() та spread
    */
-  const a = { x: 1, y: 2 };
-  const b = { x: 5, c: 3 };
+  const a = { x: 1, y: 2, a: 4 };
+  const b = { x: 5, c: 3, b: 4 };
   
 // const c = Object.assign({}, a, b);
 
 const c = {
+  // x: 5,
+  // y: 2,
+  // a: 4,
+  // c: 3, 
+  // b: 4
+   ...a,
   ...b,
-  s: 15,
-  ...a,
-  q: 25,
+ 
 }
 
-console.log(c);  
+// console.log(c);
+
+
+
+
+
+// console.log(c);  
 
   const defaultSettings = {
     theme: 'light',
@@ -94,20 +102,12 @@ const userSettings = {
   const finalSettings = {
     ...defaultSettings,
     ...userSettings
-  }
+}
+// {
+//    theme: 'light',
+//     showNotifications: false,
+//     hideSidebar: true,
+//   }
   
   
   console.log(finalSettings);
-
-//   const obj = {
-//     read(a, b){
-//       this.a = prompt('bj')
-// console.log(a);
-// console.log(b);
-
-//     }
-//   }
-
-//   obj.read(5, 5);
-//   // obj.a = 5
-//   console.log(obj);
