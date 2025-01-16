@@ -57,7 +57,6 @@ const newArr = [10, 18, ...numbers1, 15, 10, ...numbers2]
   // const allTemps = lastWeekTemps.concat(currentTemps, nextWeekTemps)
 
  
- 
   // console.log(allTemps);
   
   /*
