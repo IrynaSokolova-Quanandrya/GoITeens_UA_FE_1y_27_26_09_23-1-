@@ -34,7 +34,7 @@ for (const friend of friends) {
   
   const getOnlineFriends = function (allFriends) {}
   
-  const getOfflineFriends = function () {};
+  const getOfflineFriends = function (allFriends) {};
   
     
   // створити 2 масива онлайн і офлайн?

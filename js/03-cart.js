@@ -1,3 +1,15 @@
+[1, 5, 3]
+['hello', 'hi', 'aloha']
+const arr = [{}, {}, {}]
+
+for (let i = 0; i < arr.length; i++) {
+  const element = arr[i];
+ 
+}
+
+
+
+
 /*
  * Працюємо з колекцією товарів в кошику:
  * - getItems()
@@ -16,21 +28,24 @@
 
 const cart = {
     items: [],
-    getItems() {},
-    add(productName) {},
+  getItems() {
+      console.log(this.items);
+    },
+  add(productName) {
+      this.items.push(productName)
+    },
     remove(productName) {},
     clear() {},
     countTotalPrice() {},
     increaseQuantity(productName) {},
     decreaseQuantity(productName) {},
-  };
+};
   
- 
-  // console.table(cart.getItems());
-  
-  cart.add({ name: '🍎', price: 50 });
+
+  cart.getItems()
+  cart.add({ name: '🍎', price: 50 })
   cart.add({ name: '🍋', price: 60 });
-  cart.add({ name: '🍋', price: 60 });
+  cart.add({ name: '🍇', price: 70 });
   cart.add({ name: '🍓', price: 110 });
   cart.add({ name: '🍋', price: 60 });
    
