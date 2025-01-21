@@ -10,45 +10,21 @@ const playlist = {
     tracks: ['трек-1', 'трек-2', 'трек-3'],
     trackCount: 3,
   };
+console.log(
+  playlist.name,
+  playlist.rating,
+  playlist.trackCount,
+  playlist.tracks
+);
   
-  // console.log(
-  //   playlist.name,
-  //   playlist.rating,
-  //   playlist.trackCount,
-  //   playlist.tracks
-  // );
+const { name} = playlist
 
-// const { name } = playlist;
-// const { trackCount } = playlist;
+console.log(
+  name
+);
+ 
 
-
-// console.log(name);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  // const { name, rating, tracks, trackCount, author = "vghcg" } = playlist;
-
-  // // console.log(
-  // //   name,
-  // //   rating,
-  // //   tracks,
-  // //   trackCount,
-  // //   author
-  // // );
-
-  
-  // /*
+   // /*
   //  * Глибока деструктуризація 
   //  */
   
@@ -64,28 +40,11 @@ const playlist = {
     },
   };
   
-  // // СПОСІБ 1
+  // // СПОСІБ 1 окремо
 
-  const { name, tag, location, avatar, stats } = profile;
 
-  // console.log( name, location, stats);
-
-  const { followers, likes, views } = stats;
-  // console.log(followers, likes);
-  
-
-  // // СПОСІБ 2
-  
-  // const { 
-  //   name, 
-  //   tag, 
-  //   location, 
-  //   avatar, 
-  //   stats: {followers, likes, views} 
-  // } = profile;
-
-  // console.log(followers);
-  
+  // // СПОСІБ 2 вглибину
+    
   // /*
   //  * Деструктуризаці масивів
   //  */

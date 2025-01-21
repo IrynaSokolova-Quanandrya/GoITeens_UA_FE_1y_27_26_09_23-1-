@@ -1,15 +1,3 @@
-[1, 5, 3]
-['hello', 'hi', 'aloha']
-const arr = [{}, {}, {}]
-
-for (let i = 0; i < arr.length; i++) {
-  const element = arr[i];
- 
-}
-
-
-
-
 /*
  * Працюємо з колекцією товарів в кошику:
  * - getItems()
