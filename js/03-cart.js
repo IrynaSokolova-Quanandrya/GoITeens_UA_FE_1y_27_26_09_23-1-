@@ -14,15 +14,32 @@
  * { name: '🍓', price: 110 }
  */
 
-const cart = {
-    items: [],
+const cart = {   
   getItems() {
-      console.log(this.items);
-    },
+      console.log('items: ', this.items);
+  },
+  items: [],
   add(productName) {
-      this.items.push(productName)
+    // console.log('productName', productName);
+       
+        for(const item of this.items){
+          // console.log('item:', item);
+          if (productName.name === item.name) {
+            item.quantity += 1
+            return
+          }
+    }
+    
+     const currentItems = {
+            ...productName,
+            quantity: 1,
+        }
+        this.items.push(currentItems)
+      
     },
-    remove(productName) {},
+  remove(productName) {
+      const {} = productName
+    },
     clear() {},
     countTotalPrice() {},
     increaseQuantity(productName) {},
@@ -36,8 +53,8 @@ const cart = {
   cart.add({ name: '🍇', price: 70 });
   cart.add({ name: '🍓', price: 110 });
   cart.add({ name: '🍋', price: 60 });
-   
-  console.log(cart.items);
+   cart.add({ name: '🍋', price: 60 });
+  cart.getItems()
   // console.table(cart.getItems());
   
   cart.remove('🍎');

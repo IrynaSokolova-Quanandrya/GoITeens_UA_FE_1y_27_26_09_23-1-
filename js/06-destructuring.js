@@ -9,15 +9,10 @@ const playlist = {
     rating: 5,
     tracks: ['трек-1', 'трек-2', 'трек-3'],
     trackCount: 3,
-  };
-console.log(
-  playlist.name,
-  playlist.rating,
-  playlist.trackCount,
-  playlist.tracks
-);
-  
-const { name} = playlist
+};
+// const { name: playlistName, rating = 10} = playlist
+
+
 
 console.log(
   name
@@ -49,11 +44,10 @@ console.log(
   //  * Деструктуризаці масивів
   //  */
   
-  // const rgb = [255, 100, 80];
+  const rgb = [255, 100, 80];
 
-  // const [red, , blue] = rgb;  
+  const [a, c, b] = rbg
   
-  // console.log(red, blue);
   
   // const authors = {
   //   kiwi: 4,
@@ -65,18 +59,7 @@ console.log(
   // const entries = Object.entries(authors);
   
   // // console.log(entries);
-  
-  // // for (const [name, rating] of entries) {
-  // //   // ур2
-  // //   // const [name, rating] = entry;
-  
-  // //   // ур1
-  // //   // const name = entry[0];
-  // //   // const rating = entry[1];
-  
-  // //   console.log(name, rating);
-  // // }
-  
+   
   /*
    * Операция rest (сбор)
    */
