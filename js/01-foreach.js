@@ -7,7 +7,15 @@
 
 // array.method(callback[currentValue, index, array])
 
+
 const numbers = [5, 10, 15, 20, 25];
 
+// numbers.forEach(function (number) { })
+let total=0
+numbers.forEach(function (number) { 
+total += number
+})
+
+console.log(total);
 
 console.log(numbers)
