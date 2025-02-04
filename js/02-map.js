@@ -5,11 +5,16 @@
  * - Повертає новий масив такої ж довжини
  */
 
+// чому ми бачимо кілька консолей?
 const numbers = [5, 10, 15, 20, 25];
 
+const newNumbers = numbers.map(function (number) {
+  return number
+})
 
+console.log(newNumbers);
 console.log('numbers', numbers);
-console.log('doubledNums', doubledNums);
+// console.log('doubledNums', doubledNums);
 
 const players = [
   { id: 'player-1', name: 'Mango', timePlayed: 310, points: 54, online: false },
@@ -31,10 +36,10 @@ const players = [
 
 
 /*
- * Збільшуємо кількість поінтів кожного гравця на 10 (розпорошуємо старий об'єкт)
+ * Змінюємо властивість online на протилежну. Повернути масив гравців зі зміненою властивістю online
  */
 
-const upatedPlayers = players.map(function(player) {
+const changePlayers = players.map(function(player) {
   // { id: 'player-1', name: 'Mango', timePlayed: 310, points: 54, online: false }
   return {
     ...player,
@@ -51,12 +56,8 @@ const upatedPlayers = players.map(function(player) {
 
 const playerIdToUpdate = 'player-3';
 
-players.map((player) => {
-  if (playerIdToUpdate === player.id) {
-      return player.timePlayed += 100
-      }
-  
-})
+const upgradePlayer = function (players, playerIdToUpdate) {}
+upgradePlayer(players, 'player-3')
 
 // Переписуємо на тернарник
 // console.table(updatedPlayers);
