@@ -11,9 +11,9 @@
 
 const numbers = [5, 10, 15, 20, 25];
 
-const filteredNumbers = numbers.filter(number => number > 10)
+const filteredNumbers = numbers.filter(function (number) {})
 
-// console.log(filteredNumbers);
+console.log(filteredNumbers);
 
 const players = [
   { id: 'player-1', name: 'Mango', timePlayed: 310, points: 54, online: false },

@@ -8,12 +8,10 @@
 // чому ми бачимо кілька консолей?
 const numbers = [5, 10, 15, 20, 25];
 
-const newNumbers = numbers.map(function (number) {
-  return number
-})
+const newNumbers = numbers.map(function (number) { return 'hello'})
 
 console.log(newNumbers);
-console.log('numbers', numbers);
+// console.log('numbers', numbers);
 // console.log('doubledNums', doubledNums);
 
 const players = [

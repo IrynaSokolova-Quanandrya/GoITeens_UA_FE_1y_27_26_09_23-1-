@@ -6,11 +6,11 @@
 
 const numbers = [5, 10, 15, 20, 25, 15];
 
-const number = numbers.find((number)=> {
-  return number === 15
+const number = numbers.find(function (number) {
+  return number === 150
 })
 
-// console.log(number);
+console.log(number);
 
 const players = [
   { id: 'player-1', name: 'Mango', timePlayed: 310, points: 54, online: false },
@@ -27,18 +27,19 @@ const findPlayerById = function(allPlayers, playerId) {
   // const allPlayers = players
   // const playerId = 'player-1'
 
-  return allPlayers.find((player) => {return player.id === playerId});
+  
 
 }
 
-findPlayerById(players, 'player-1');
+// findPlayerById(players, 'player-1');
 
-console.log(findPlayerById(players, 'player-1'));
-console.log(findPlayerById(players, 'player-4'));
-console.log(findPlayerById(players, 'player-10'));
+// console.log(findPlayerById(players, 'player-1'));
+// console.log(findPlayerById(players, 'player-4'));
+// console.log(findPlayerById(players, 'player-10'));
 
 /*
  * Шукаємо гравця по імені
  */
 
+const nameToFind = 'Chelsy'
 // console.log(playerWithName);
