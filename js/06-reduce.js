@@ -7,9 +7,16 @@
 // array.reduce(сallback[(previousValue, currentItem, index, array)], initialValue)
 
 const numbers = [5, 10, 15, 20, 25];
-// let total = 0;
-const total = numbers.reduce((total, number)=>{return total += number}, 0);
 
+// let total = 0
+
+// numbers.forEach(function (num) {
+//   total += num  
+// })
+
+// const total = numbers.reduce(function (totalSum, number) {}, 0);
+
+// console.log(total);
 // acc = 0
 // acc = acc + number => 0 + 5 = 5
 // acc = acc + number => 5 + 10 = 15
@@ -71,17 +78,28 @@ const tweets = [
   { id: '004', likes: 0, tags: ['js', 'nodejs', 'react'] },
 ];
 
-const allTags = tweets.reduce((tags, tweet)=>{
-  return [...tags, ...tweet.tags]
+
+
+const allTags = tweets.reduce(function (tags, tweet) {
+  tags.push(...tweet.tags)
+return tags
+
 }, [])
 
-// {
+console.log(allTags);
+// const tags = {
 // js: 1,
 // nodejs: 2,
 // html: 3
 // }
 
-console.log(allTags);
+// tag = 'css'
+
+// tags.js//1
+// tags[tag]//1
+
+
+// console.log(allTags);
 
 // acc = [], tweet.tags = ['js', 'nodejs'] return [...[], ...['js', 'nodejs']]
 // acc = ['js', 'nodejs'] tweet.tags ['html', 'css']
@@ -92,13 +110,20 @@ console.log(allTags);
  * Ведемо статистику тегів
  */
 const tagsStats = allTags.reduce((acc, tag) => {
-  return {
-  ...acc,
-  [tag]: acc[tag] ? acc[tag] += 1 : acc[tag] = 1,
- }
+  if (acc[tag]) {
+    acc[tag] +=1
+  } else {
+    acc[tag] = 1
+  }
+  return acc
 }, {});
 
-console.log(tagsStats);
+// console.log(tagsStats);
 
 // якщо властивість з ключем tag є, збільшуємо його значення на 1
 // якщо властивості немає с таким ключем що в tag, створити і записати 1
+
+// {
+//   ...acc,
+//   [tag]: acc[tag] ? acc[tag] += 1 : acc[tag] = 1,
+//  }

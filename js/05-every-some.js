@@ -12,9 +12,7 @@ const players = [
    * - Повертає true якщо всі елементи масива задовільняють умову
    */
   
-const anyHardcorePlayers = players.every((player) => {
-  return player.timePlayed > 100
-})
+const anyHardcorePlayers = players.every((player) => {})
 // console.log(anyHardcorePlayers);  
   
   /*
@@ -23,9 +21,7 @@ const anyHardcorePlayers = players.every((player) => {
    * - Повертає true якщо хоча б один елемент масива задовільняє умову
    */
   
-const isAnyOnline = players.some((player)=>{
-  return player.online
-})
+const isAnyOnline = players.some((player)=>{})
   
   console.log('isAnyOnline: ', isAnyOnline);
   
