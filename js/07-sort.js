@@ -1,3 +1,9 @@
+// const fnA = function () { } //функціональний вираз
+// function fnB() {} //об'явлення функції
+
+// const fnC =(a, b)=> a + b //стрілкова функція
+// const fnS = a =>{}
+
 /*
  * Array.prototype.sort(callback(currentEl, nextEl){})
  * - Сортує та ЗМІНЮЄ оригінальний масив
@@ -6,20 +12,15 @@
  *    - приводить елементи в рядок і сортує по [Unicode](https://unicode-table.com/en/)
  */
 
-// const numbers = [1, 9, 6, 2, 3];
-// numbers.reverse()
-// numbers.sort()
-// console.log('numbers', numbers);
-
-const letters = ['b', 'B', 'a', 'A'];
-const copyLetters = [...letters];
-
-console.log(letters === copyLetters);
-
-
-
-// letters.sort()
-// console.log('letters', letters);
+const numbers = [1, 9, 6, 2, 3];
+const sortedNumbers = numbers.sort()
+console.log('numbers: ', numbers);
+console.log('sortedNumbers: ', sortedNumbers);
+console.log(sortedNumbers === numbers);
+                  
+const letters = ['ф', 'в', 'а', 'ý', 'š', 'ž', 'č'];
+letters.sort()
+console.log('letters: ', letters);
 
 /*
  * compareFunction - функція порівняння (callback)
@@ -28,13 +29,13 @@ console.log(letters === copyLetters);
  *  - якщо compareFunction(A, B) більше 0, сортування поставить A перед B
  *  - якщо compareFunction(A, B) поверне 0, сортування залишить A та B не зміненими по відношенню один до одного, але відсортує їх по відношенню до всіх інших елементів.
  */
-const numbers = [1, 9, 6, 20, 3];
-letters.sort((curEl, nextEl) => {
-    // console.log('curEl: ',curEl);
-    // console.log('nextEl: ',nextEl);
-    // console.log(curEl > nextEl);
-   return curEl > nextEl
-});
+// const numbers = [1, 9, 6, 20, 3];
+// letters.sort((curEl, nextEl) => {
+//     // console.log('curEl: ',curEl);
+//     // console.log('nextEl: ',nextEl);
+//     // console.log(curEl > nextEl);
+//    return curEl > nextEl
+// });
 
 // console.log(letters);
 /*

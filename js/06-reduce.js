@@ -83,8 +83,15 @@ const tweets = [
 const allTags = tweets.reduce(function (tags, tweet) {
   tags.push(...tweet.tags)
 return tags
+}, []).reduce((acc, tag) => {
+  if (acc[tag]) {
+    acc[tag] +=1
+  } else {
+    acc[tag] = 1
+  }
+  return acc
+}, {}).map();
 
-}, [])
 
 console.log(allTags);
 // const tags = {
@@ -109,14 +116,6 @@ console.log(allTags);
 /*
  * Ведемо статистику тегів
  */
-const tagsStats = allTags.reduce((acc, tag) => {
-  if (acc[tag]) {
-    acc[tag] +=1
-  } else {
-    acc[tag] = 1
-  }
-  return acc
-}, {});
 
 // console.log(tagsStats);
 
