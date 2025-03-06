@@ -12,13 +12,13 @@ console.dir(document);
  */
 
 
+console.log(document);
 
+const navListEl = document.querySelector('.site-nav');
+console.log(navListEl);
 
-// const navListEl = document.querySelector('.site-nav');
-// console.log(navListEl);
-
-// const itemEl = document.querySelectorAll('.site-nav .site-nav__item')
-// console.log(itemEl);
+const itemEl = navListEl.querySelectorAll('.site-nav__item')
+console.log(itemEl);
 
 // const navRef = document.querySelector('.site-nav');
 // // console.log(navRef);
