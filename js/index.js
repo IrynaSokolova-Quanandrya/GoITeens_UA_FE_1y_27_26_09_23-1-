@@ -1,11 +1,9 @@
 const listEl = document.querySelector('.site-nav');
 const imgEl = document.querySelector('.hero__image')
 
-// console.dir(imgEl.src);
+console.log(typeof listEl);
 
-// imgEl.src = 'https://www.pexels.com/ru-ru/photo/14939897/'
+imgEl.getAttribute('src')
+imgEl.src
 
-imgEl.width = '320'
-
-listEl.style.backgroundColor = 'green'
 

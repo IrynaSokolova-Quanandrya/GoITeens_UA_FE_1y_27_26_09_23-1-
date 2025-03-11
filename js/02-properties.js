@@ -37,12 +37,16 @@ user.isOnline = true
 const titleRef = document.querySelector('.hero__title');
 const imgRef = document.querySelector('.hero__image');
 
-imgRef.alt = 'Hello!'
+imgRef.addEventListener('click', () => {
+    
+})
+
+imgRef.alt
 imgRef.src = 'https://images.pexels.com/photos/1870376/pexels-photo-1870376.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=480'
 
 // console.log(titleRef.textContent);
 
-titleRef.textContent = 'Киця';
+titleRef.textContent = ''
 
 // console.log(titleRef.textContent);
 /*

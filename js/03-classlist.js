@@ -1,9 +1,15 @@
 const magicBtn = document.querySelector('.js-magic-btn');
+const linkEl = document.querySelector('.site-nav__link')
+const navListEl = document.querySelector('.site-nav')
+console.log(navListEl);
 
-magicBtn.style.color = 'red';
-magicBtn.style.backgroundColor = 'teal'
+const obj = {
+    color: 'red',
+        bgc: 'black'
+}
 
-
+linkEl.style.color = obj.color
+linkEl.style.backgroundColor = 'aqua'
 
 /*
  * Інтерфейс classList
@@ -13,27 +19,3 @@ magicBtn.style.backgroundColor = 'teal'
  * - replace(старийКлас, новийКлас)
  * - contains(клас)
  */
-
-const navListRef = document.querySelector('ul')
-navListRef.classList.add('nav-list')
-navListRef.classList.add('js-nav-list')
-
-navListRef.classList.remove('js-nav-list')
-
-navListRef.classList.toggle('nav-list')
-navListRef.classList.toggle('nav-list')
-navListRef.classList.toggle('js-nav-list')
-
-navListRef.classList.replace('js-nav-list', 'new-class')
-
-console.log(navListRef.classList.contains('ew-class'));
-console.log(navListRef.classList);
-
-
-console.dir(navListRef);
-
-
-
-
-
-// // Робимо приклад з current сторінкою
