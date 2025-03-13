@@ -3,57 +3,33 @@
  * - Вставка вузлів: appendChild(elem), insertBefore(elem, nextSibling), append(...elems), prepend(...elems)
  */
 
-
+const heroEl = document.querySelector('.hero')
 // Створюємо заголовок
 
-const containerEl = document.querySelector('body')
-const listEl = document.querySelector('.site-nav')
-
-const titleRef = document.createElement('h1');
-titleRef.textContent = 'My first element';
-titleRef.classList.add('title');
-titleRef.style.color = 'tomato';
-console.log(titleRef);
-
-// element.append(el1, el2, ...)
-
-listEl.before(titleRef)
-
-
-
-
-
-// containerEl.appendChild(titleEl);
-// document.body.insertBefore(titleEl, listEl)
+const titleEl = document.createElement('h1')
+titleEl.classList.add('page-title')
+titleEl.textContent = 'My first element'
+titleEl.style.color = 'red'
+console.log(titleEl);
 
  /* Створюємо зображення
  * https://cdn.pixabay.com/photo/2018/07/26/07/45/valais-3562988_1280.jpg
  * valais-alpine-mountains-glacier
  */
+const imageEl = document.createElement('img')
+imageEl.src = 'https://cdn.pixabay.com/photo/2018/07/26/07/45/valais-3562988_1280.jpg'
+imageEl.alt = 'valais-alpine-mountains-glacier'
+imageEl.width = '250'
+console.log(imageEl);
 
 
+// heroEl.appendChild(titleEl)
+// heroEl.appendChild(imageEl)
 
+heroEl.append(titleEl, imageEl)
 
-
+console.log(heroEl);
 
 /*
  * Створюємо і додаємо новий пункт меню
  */
-// const listEl = document.querySelector('.site-nav')
-
-// const itemEl = document.createElement('li');
-// itemEl.classList.add('site-nav__item');
-
-// const linkEl = document.createElement('a');
-// linkEl.href = '';
-// linkEl.classList.add('site-nav__link');
-// linkEl.textContent = 'Особистий кабінет';
-
-
-// console.log(linkEl);
-
-// itemEl.appendChild(linkEl);
-// console.log(itemEl);
-// listEl.appendChild(itemEl)
-
-// listEl.append(itemEl)
