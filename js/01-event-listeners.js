@@ -13,30 +13,16 @@ const targetBtn = document.querySelector('.js-target-btn');
 const addListenerBtn = document.querySelector('.js-add-listener');
 const removeListenerBtn = document.querySelector('.js-remove-listener');
 
-addListenerBtn.addEventListener('click', onClick)
-removeListenerBtn.removeEventListener('click', onClick)
+addListenerBtn.addEventListener('click', () => {
+         console.log('Вішаємо');
+        targetBtn.addEventListener('click', handleClick)
+})
 
-function onClick(event) {        
-        console.log(event.target);
+removeListenerBtn.addEventListener('click', () => {
+         console.log('Знімаємо');
+       targetBtn.removeEventListener('click', handleClick) 
+})
+
+function handleClick() {
+          console.log('Додали слухача targetBtn');
 }
-
-
-
-// targetBtn.addEventListener('click', onClick)
-
-// function onClick(event) {    
-//         console.log(event.currentTarget);    
-// }
-
-// addListenerBtn.addEventListener('click', ()=>{
-//     console.log('Додали слухача подій на цільову кнопку');
-   
-//     targetBtn.addEventListener('click', onClick)
-// })
-
-// removeListenerBtn.addEventListener('click', ()=>{
-//     console.log('Зняли слухача з цільової кнопки');
-
-//     targetBtn.removeEventListener('click', onClick)
-// })
-
