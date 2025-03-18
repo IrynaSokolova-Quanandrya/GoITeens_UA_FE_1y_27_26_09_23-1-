@@ -10,27 +10,7 @@ const colorPickerOptions = [
     { label: 'indigo', color: '#3F51B5' },
   ];
   
-const colorPickerContainerEl = document.querySelector('.js-color-picker');
-
-const btnElList = colorPickerOptions.map(option => {
-
-  const btnEl = document.createElement('button');
-  btnEl.type = 'button';
-  btnEl.textContent = option.label;
-  btnEl.style.backgroundColor = option.color;
-  
-  return btnEl;
-})
-
-console.log(...btnElList);
-colorPickerContainerEl.append(...btnElList)
-
-  
-
-
-
-  
-  
+ 
   /*
    * Пишемо функцію для створення розмітки колорпікеру
    */

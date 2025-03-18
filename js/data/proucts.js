@@ -1,4 +1,4 @@
-const games =  [
+export default  [
 
     {
       name: 'Товар-2',
