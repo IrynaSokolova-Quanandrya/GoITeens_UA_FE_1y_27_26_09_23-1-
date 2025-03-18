@@ -1,5 +1,5 @@
-import products from './data/proucts'
-console.log(products);
+// import products from './data/proucts'
+// console.log(products);
 /*
  * Властивість innerHTML
  * - Зчитування
@@ -11,6 +11,7 @@ const titleEl = document.querySelector('.title');
 // titleEl.textContent = 'Hello <span>user</span>'
 // console.log(titleEl.textContent);
 titleEl.innerHTML = 'Hello <div>user</div>'
+titleEl.innerHTML = 'Hello'
 console.log(titleEl.innerHTML);
 
 /*
@@ -22,3 +23,11 @@ console.log(titleEl.innerHTML);
   <p class="product__descr">Опис</p>
   <p product__pridct>Ціна: 1111 кредитів</p>
 </article> */}
+
+
+const containerRef = document.querySelector('.js-container')
+containerRef.insertAdjacentHTML('beforeend', `<article class="product">
+  <h2 class="product__name">Назва</h2>
+  <p class="product__descr">Опис</p>
+  <p product__pridct>Ціна: 1111 кредитів</p>
+</article>`)
