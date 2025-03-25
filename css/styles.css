@@ -16,6 +16,13 @@ label {
   cursor: pointer;
 }
 
+.form-container {
+  margin: 0 auto;
+  width: 600px;
+  border: 2px solid green;
+  padding: 15px;
+}
+
 input {
   font: inherit;
 }

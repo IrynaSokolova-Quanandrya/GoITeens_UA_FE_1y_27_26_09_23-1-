@@ -12,12 +12,8 @@ const refs = {
  window.addEventListener('keydown', onKeypress)
 
  function onKeypress(event){
-  // console.log(event);
   console.log('event.code: ', event.code);
   console.log('event.key: ', event.key);
-  console.log(event.target.nodeName);
-
-  refs.output.textContent += event.code;
 
  }
 

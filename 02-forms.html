@@ -11,39 +11,41 @@
     <p><a href="/">На головну</a></p>
 
     <!-- Подія сабміту форми -->
-    <form class="js-register-form" autocomplete="off">
-      <div role="group">
-        <label>
-          Пошта
-          <input type="email" name="email" />
-        </label>
-        <br>
-        <label>
-          Пароль
-          <input  name="password" type="password" />
-        </label>
-      </div>
+    <div class="form-container">
+      <form class="js-register-form" autocomplete="off">
+        <div role="group">
+          <label>
+            Пошта
+            <input type="email" name="email" />
+          </label>
+          <br />
+          <label>
+            Пароль
+            <input name="password" type="password" />
+          </label>
+        </div>
 
-      <br />
-      <div role="group">
-        <b>Тип піписки:</b>
-        <label>
-          <input type="radio" name="subscription" value="free" />
-          Free
-        </label>
-        <label>
-          <input type="radio" name="subscription" value="basic" />
-          Basic
-        </label>
-        <label>
-          <input type="radio" name="subscription" value="pro" />
-          Pro
-        </label>
-      </div>
+        <br />
+        <div role="group">
+          <b>Тип піписки:</b>
+          <label>
+            <input type="radio" name="subscription" value="free" />
+            Free
+          </label>
+          <label>
+            <input type="radio" name="subscription" value="basic" />
+            Basic
+          </label>
+          <label>
+            <input type="radio" name="subscription" value="pro" />
+            Pro
+          </label>
+        </div>
 
-      <br />
-      <button type="submit">Зареєструватися</button>
-    </form>
+        <br />
+        <button type="submit">Зареєструватися</button>
+      </form>
+    </div>
 
     <script src="./js/02-forms.js" type="module"></script>
   </body>

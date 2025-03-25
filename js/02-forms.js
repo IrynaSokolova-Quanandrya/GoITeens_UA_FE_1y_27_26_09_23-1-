@@ -9,17 +9,28 @@
  *    - on*: onSubjectEvent 
 */
 
-const form = document.querySelector('.js-register-form');
+const formEl = document.querySelector('.js-register-form')
 
-form.addEventListener('submit', onSubmit)
+formEl.addEventListener('submit', onSubmit)
 
 function onSubmit(event) {
-    event.preventDefault();
-    const form = event.currentTarget
-    const password = form.elements.email.value
+    event.preventDefault()
 
-    form.reset()
+    const form = event.currentTarget.elements
+
+    const email = form.email.value
+    const password = form.password.value
+    const subscription = form.subscription.value
+
+    console.log(email, password, subscription);
+
+   
+
+    event.currentTarget.reset()
 }
+
+
+
 
 
 
