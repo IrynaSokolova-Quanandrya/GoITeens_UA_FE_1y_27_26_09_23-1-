@@ -13,8 +13,8 @@ const refs = {
 
 function onKeypress(event) {
   // console.log(event);
-  console.log('event.code: ', event.code);
-  console.log('event.key: ', event.key);
+  console.log('event.code: ', event.code);//KeyG
+  console.log('event.key: ', event.key);//g п 
 
  }
 

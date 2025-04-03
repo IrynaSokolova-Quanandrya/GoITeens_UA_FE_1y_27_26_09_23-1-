@@ -17,7 +17,7 @@
 * 4.2 знымаэмо слухача з window
 * 4.3 робимо перевірку на натиснення по потрібній клавіші ESC
 */
-<li class="item">
+{/* <li class="item">
     <h2>Тварини</h2>
 
     <ul>
@@ -33,7 +33,7 @@ const items = document.querySelectorAll('.item')//[item1, item2]
 items.forEach((item) => {
   console.log(item.querySelector('h2').textContent); //h2
   console.log(item.querySelectorAll('li').length);
-})
+}) */}
 
   const openModalBtn = document.querySelector('[data-action="open-modal"]');
   const closeModalBtn = document.querySelector('[data-action="close-modal"]');
