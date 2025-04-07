@@ -1,0 +1,13 @@
+$animals:"cat", "bird", "dog", "turtle", "chiken";
+$skils:"html", "css", "js";
+
+@mixin ganaradeBg($list){
+    @each $animalName in $list{
+        .#{$animalName}{ 
+            background-image: url(../img/#{$animalName}.png);
+            }
+            
+       }
+}
+@include ganaradeBg($animals);
+@include ganaradeBg($skils);
