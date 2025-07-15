@@ -1,15 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>    
-</head>
-<body>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Intersection Observer Demo</title>
+		<style>
+			body {
+				font-family: sans-serif;
+				margin: 0;
+				padding: 0;
+			}
+			.section {
+				height: 100vh;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 2rem;
+				background: #f0f0f0;
+				margin-bottom: 20px;
+				opacity: 0;
+				transform: translateY(50px);
+				transition: all 0.8s ease-out;
+			}
+			.section.visible {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="section">Перша секція</div>
+		<div class="section">Друга секція</div>
+		<div class="section">Третя секція</div>
 
-    <h1>Start JavaScript</h1>
-
-
-    <script type="module" src="./index.js"></script>
-</body>
+		<script src="index.js"></script>
+	</body>
 </html>
