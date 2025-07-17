@@ -1,4 +1,4 @@
-const imagesList = document.querySelectorAll('img')
+const imgList = document.querySelectorAll('li')
 
 const observer = new IntersectionObserver(
 	entries => {
@@ -9,8 +9,8 @@ const observer = new IntersectionObserver(
 		})
 	},
 	{
-		threshold: 0.2,
+		threshold: 0.3,
 	}
 )
 
-imagesList.forEach(img => observer.observe(img))
+imgList.forEach(img => observer.observe(img))
