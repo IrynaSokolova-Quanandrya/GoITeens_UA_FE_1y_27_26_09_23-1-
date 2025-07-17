@@ -1,14 +1,16 @@
-const observer = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target); // відключити спостереження після першої появи
-    }
-  });
-}, {
-  threshold: 0.1 // спрацює, коли видно хоча б 10% елемента
-});
+const imagesList = document.querySelectorAll('img')
 
-document.querySelectorAll('.section').forEach(section => {
-  observer.observe(section);
-});
+const observer = new IntersectionObserver(
+	entries => {
+		console.log(entries)
+		entries.forEach(entry => {
+			if (entry.isIntersecting) entry.target.classList.add('visible')
+			if (entry.isIntersecting) observer.unobserve(entry.target)
+		})
+	},
+	{
+		threshold: 0.2,
+	}
+)
+
+imagesList.forEach(img => observer.observe(img))

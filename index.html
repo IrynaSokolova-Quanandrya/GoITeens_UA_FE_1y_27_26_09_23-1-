@@ -9,28 +9,30 @@
 				margin: 0;
 				padding: 0;
 			}
-			.section {
-				height: 100vh;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				font-size: 2rem;
-				background: #f0f0f0;
+			ul {
+				list-style: none;
+			}
+			img {
 				margin-bottom: 20px;
 				opacity: 0;
 				transform: translateY(50px);
 				transition: all 0.8s ease-out;
 			}
-			.section.visible {
+			img.visible {
 				opacity: 1;
 				transform: translateY(0);
 			}
 		</style>
 	</head>
 	<body>
-		<div class="section">Перша секція</div>
-		<div class="section">Друга секція</div>
-		<div class="section">Третя секція</div>
+		<ul>
+			<li><img width="300" src="./images/BG.jpg" /></li>
+			<li><img width="300" src="./images/bg_1.jpg" /></li>
+			<li><img width="300" src="./images/cup-in-the-box.jpeg" /></li>
+			<li><img width="300" src="./images/girl.png" /></li>
+			<li><img width="300" src="./images/roza_kub_2-750x750.jpg" /></li>
+			<li><img width="300" src="./images/scene.webp" /></li>
+		</ul>
 
 		<script src="index.js"></script>
 	</body>
