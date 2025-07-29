@@ -1,3 +1,17 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
  * Напиши скрипт вибору готеля по кількості зірок.
  * 1,2 - 20$,  3,4 - 50$,  5 - 120$
@@ -53,59 +67,7 @@ let price;
 //     тіло
 // }
 
-function spinWords(string){
-    console.log(string.split(' '));
-    return string.split(' ').map(word => {
-        console.log(word);
-       if(word.length >= 5){
-        console.log(word);
-       console.log(word.split('').reverse().join(''));;
-      
-       }
-       console.log(word);
-       return word;
-     }).join(' ')
-   }
-   console.log(spinWords("Welcome"));
 
-
-
-
-
-
-
-
-
-
-
-
-
-/*
- * Напиши скрипт вибору готеля по кількості зірок.
- * 1,2 - 20$, 3,4 - 30$, 5 - 120$
- */
-// const stars = 1;
-// let price;
-// switch (stars) {
-//     case 1: 
-//     case 2:        
-//         price = 20;
-//         console.log(`Ціна готелю з ${stars} зірками - ${price}$`);
-//         break;
-//     case 3:
-//     case 4:
-//         price = 30;
-//         console.log(`Ціна готелю з ${stars} зірками - ${price}$`);
-//         break;
-//     case 5:
-//         price = 120;
-//         console.log(`Ціна готелю з ${stars} зірками - ${price}$`);
-//         break;
-
-//     default:
-//         console.log('Токої кількості зірок немає');
-//         break;
-// }
 
 /*
  * Напиши скрипт вибору опції доставки товару.
@@ -119,27 +81,7 @@ function spinWords(string){
  */
 
 // 1 створюємо змінні
-const option = 5;
-let message = '';
-
 // 2. робимо світч
 // 3. перевіряємо на рівність опцію і виводимо повідоилення
-// switch (option) {
-//     case 1:      
-//         message = 'Ви зможете забрати товар завтра з 12:00 в нашому офісі'
-//         console.log(message);
-//         break;
-//     case 2:
-//         message = 'Кур"єр доставить замовлення завтра з 9:00 до 18:00'
-//         console.log(message);
-//         break;
-//     case 3:
-//         message = 'Посилка буде відправлена сьогодні';
-//         console.log(message);
-//         break;
-// // 4. дефолтне повідомлення
-//     default:
-//         message = 'Вам передзвонит менеджер';
-//         console.log(message);
-//         break;
-// }
+// 4. дефолтне повідомлення
+   
