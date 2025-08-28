@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>    
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Модуль 11</title>
+  </head>
+  <body>
+    <ul>
+      <li><a href="01-promise-api.html">Проміси</a></li>
+      <li><a href="02-promisification.html">Промісифікація функцій</a></li>
+      <li><a href="03-racetrack.html">Майстерня: іподром</a></li>
+    </ul>
 
-    <h1>Start JavaScript</h1>
+    <form class="form-inline search-form js-search-form"></form>
+      <div class="form-group">
+        <input type="text" class="form-control" name="query" />
+      </div>
 
+      <button type="submit" class="btn btn-primary">Шукати</button>
+    </form>
 
-    <script type="module" src="./index.js"></script>
-</body>
+    <input class="js-search" type="text" name="query">
+    <button class="js-search-btn" type="button">Search</button>
+
+    <div class="js-card-container"></div>
+
+    <!-- <script src="index.js" type="module"></script> -->
+    <script type="module" src="./js/04-rest-api.js"></script>
+  </body>
 </html>
