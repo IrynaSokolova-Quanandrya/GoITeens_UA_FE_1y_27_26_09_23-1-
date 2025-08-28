@@ -9,32 +9,9 @@
  *  - finally()
  * - 'https://pokeapi.co/api/v2/pokemon/5'
  */
+const promise = new Promise((resolve, rejected) => {
+	resolve('Код виконання промісу!')
+})
+promise.then(str => console.log(str))
 
-// function onFulfilled(result) {
-//   console.log('onFulfilled -> onFulfilled');
-//   console.log(`✅ ${result}`);
-// }
-
-// function onRejected(error) {
-//   console.log('onRejected -> onRejected');
-//   console.log(`❌ ${error}`);
-// }
-
-/*
- * Ланцюжки Промісів (chaining)
- * Promise.prototype.catch(error)
- * Promise.prototype.finally()
- */
-
-// promise
-//   .then(onFulfilled)
-//   .then(x => {
-//     console.log(x);
-
-//     return 10;
-//   })
-//   .then(y => {
-//     console.log(y);
-//   })
-//   .catch(error => console.log(error))
-//   .finally(() => console.log('Я буду виконаний в любому випадку'));
+fetch('https://pokeapi.co/api/v2/pokemon/5').then(res => console.log(res))
