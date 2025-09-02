@@ -1,49 +1,44 @@
-const refs = {
-  form: document.querySelector('.js-search-form'),
-  container: document.querySelector('.js-card-container'),
-  btn: document.querySelector('.js-search-btn'),
-  search: document.querySelector('.js-search')
-}
-console.log(refs);
+// const refs = {
+// 	form: document.querySelector('.js-search-form'),
+// 	container: document.querySelector('.js-card-container'),
+// 	btn: document.querySelector('.js-search-btn'),
+// 	search: document.querySelector('.js-search'),
+// }
+// console.log(refs)
 
-refs.btn.addEventListener('click', () => {
+// refs.btn.addEventListener('click', () => {
+// 	fetchPokemonById(refs.search.value).then(pokemon => {
+// 		const pokemonCard = `<div class="card">
+//   <div class="card-img-top">
+//     <img src="${pokemon.sprites.front_default}" alt="">
+//   </div>
+//   <div class="card-body">
+//     <h2 class="card-title">Ім'я:${pokemon.name}</h2>
+//     <p class="card-text">Вага: ${pokemon.weight}</p>
+//     <p class="card-text">Зріст: ${pokemon.height} </p>
 
-  fetchPokemonById(refs.search.value)
-    .then(pokemon => {
-      const pokemonCard = `<div class="card">
-  <div class="card-img-top">
-    <img src="${pokemon.sprites.front_default}" alt="">
-  </div>
-  <div class="card-body">
-    <h2 class="card-title">Ім'я:${pokemon.name}</h2>
-    <p class="card-text">Вага: ${pokemon.weight}</p>
-    <p class="card-text">Зріст: ${pokemon.height} </p>
+//     <p class="card-text"><b>Вміння</b></p>
+//     <ul class="list-group"></ul>
+//       <li class="list-group-item"></li>
+//     </ul>
+//   </div>
+// </div>`
 
-    <p class="card-text"><b>Вміння</b></p>
-    <ul class="list-group"></ul>   
-      <li class="list-group-item"></li>    
-    </ul>
-  </div>
-</div>`
-      
-      refs.container.innerHTML = pokemonCard
-    })
-})
+// 		refs.container.innerHTML = pokemonCard
+// 	})
+// })
 
 // refs.form.addEventListener('submit', onFormSubmit)
 
-// function onFormSubmit(e) {  
-  
-//   e.preventDefault()
-//   console.log(e);
-//   const form = e.currentTarget
- 
-//   const value = form.elements.query.value
+// function onFormSubmit(e) {
+// 	e.preventDefault()
+// 	console.log(e)
+// 	const form = e.currentTarget
 
-//   fetchPokemonById(value)
-//     .then(pokemon => {
+// 	const value = form.elements.query.value
 
-//       const pokemonCard = `<div class="card">
+// 	fetchPokemonById(value).then(pokemon => {
+// 		const pokemonCard = `<div class="card">
 //   <div class="card-img-top">
 //     <img src="" alt="">
 //   </div>
@@ -53,38 +48,50 @@ refs.btn.addEventListener('click', () => {
 //     <p class="card-text">Зріст: </p>
 
 //     <p class="card-text"><b>Вміння</b></p>
-//     <ul class="list-group"></ul>   
-//       <li class="list-group-item"></li>    
+//     <ul class="list-group"></ul>
+//       <li class="list-group-item"></li>
 //     </ul>
 //   </div>
 // </div>`
-//     })
+// 	})
 
-//   e.reset()
+// 	e.reset()
 // }
 
-function fetchPokemonById(pokemonId) {
-   return fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonId}`)
-    .then(res => res.json())
-} 
+// function fetchPokemonById(pokemonId) {
+// 	return fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonId}`).then(res =>
+// 		res.json()
+// 	)
+// }
 
+// /**
+//      * <div class="card">
+//   <div class="card-img-top">
+//     <img src="" alt="">
+//   </div>
+//   <div class="card-body">
+//     <h2 class="card-title">Ім'я: </h2>
+//     <p class="card-text">Вага: </p>
+//     <p class="card-text">Зріст: </p>
 
-
-
-    /**
-     * <div class="card">
-  <div class="card-img-top">
-    <img src="" alt="">
-  </div>
-  <div class="card-body">
-    <h2 class="card-title">Ім'я: </h2>
-    <p class="card-text">Вага: </p>
-    <p class="card-text">Зріст: </p>
-
-    <p class="card-text"><b>Вміння</b></p>
-    <ul class="list-group"></ul>   
-      <li class="list-group-item"></li>    
-    </ul>
-  </div>
-</div>
-     */
+//     <p class="card-text"><b>Вміння</b></p>
+//     <ul class="list-group"></ul>
+//       <li class="list-group-item"></li>
+//     </ul>
+//   </div>
+// </div>
+//      */
+fetch('https://pokeapi.co/api/v2/ability/48/')
+	.then(result => {
+		return result.json()
+	})
+	.then(pokemon => {
+		console.log(pokemon.name)
+		return 5 + 5
+	})
+	.then(res1 => {
+		console.log(res1)
+	})
+	.then(res2 => {
+		console.log(res2)
+	})
