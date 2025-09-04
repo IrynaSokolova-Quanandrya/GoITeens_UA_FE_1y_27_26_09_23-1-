@@ -1,3 +1,51 @@
+/*
+ * - HTTP-запити в браузері
+ *  - Fetch API
+ *  - Владка Network
+ *  - HTTP-методи
+ *  - статус відповіді коди
+ *  - postman
+ *  - Заголовки
+ *  - MIME-типи
+ *  - Параметри запиту
+ * - Документація REST API
+ * - Обробка 404 з fetch
+ * - Аутентифікація
+ * - Заголовки
+ * - https://pokeapi.co/
+ * - [https://pixabay.com/api/docs/]
+ * - [https://openweathermap.org/api]
+ * - [https://newsapi.org/]
+ */
+function fetchPokemonById(pokemonId) {
+	return fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonId}`).then(res =>
+		res.json()
+	)
+}
+
+fetchPokemonById(1)
+	.then(pokemon => console.log(pokemon))
+	.catch(() => {
+		console.log('Oops!')
+		alert('Щось пішло не так(((')
+	})
+
+const url = 'https://newsapi.org/v2/everything?q=flowers'
+const options = {
+	headers: {
+		'X-Api-Key': '3ce63eea477043d7a470d2b21dc5ab4b',
+	},
+}
+
+// // =========================================
+
+// const url = 'https://newsapi.org/v2/everything?q=cars';
+// const options = {
+//   headers: {
+//     Authorization: '4330ebfabc654a6992c2aa792f3173a3',
+//   },
+// };
+
 // const refs = {
 // 	form: document.querySelector('.js-search-form'),
 // 	container: document.querySelector('.js-card-container'),
@@ -81,17 +129,17 @@
 //   </div>
 // </div>
 //      */
-fetch('https://pokeapi.co/api/v2/ability/48/')
-	.then(result => {
-		return result.json()
-	})
-	.then(pokemon => {
-		console.log(pokemon.name)
-		return 5 + 5
-	})
-	.then(res1 => {
-		console.log(res1)
-	})
-	.then(res2 => {
-		console.log(res2)
-	})
+// fetch('https://pokeapi.co/api/v2/ability/48/')
+// 	.then(result => {
+// 		return result.json()
+// 	})
+// 	.then(pokemon => {
+// 		console.log(pokemon.name)
+// 		return 5 + 5
+// 	})
+// 	.then(res1 => {
+// 		console.log(res1)
+// 	})
+// 	.then(res2 => {
+// 		console.log(res2)
+// 	})
